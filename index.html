@@ -125,6 +125,11 @@
         </div>
 
     </div>
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large orange darken-4" onclick="topFunction()">
+            <i class="large material-icons">keyboard_arrow_up</i>
+        </a>
+    </div>
 
 
 
@@ -136,6 +141,11 @@
             var elems = document.querySelectorAll('.materialboxed');
             var instances = M.Materialbox.init(elems);
         });
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
     </script>
 </body>
 
